@@ -1,6 +1,9 @@
 import streamlit as st
 from main import get_qa_chain, create_vector_db
 
+# Add the DIT University logo at the top
+st.image("https://upload.wikimedia.org/wikipedia/commons/2/2e/DIT_University_Dehradun_Logo.jpg", width=200)
+
 # Title of the application
 st.title("Campus Queries App")
 
@@ -8,15 +11,24 @@ st.title("Campus Queries App")
 st.sidebar.title("Navigation")
 selected_option = st.sidebar.radio("Choose an option:", ["Ask a Question", "Create Knowledgebase"])
 
+# Password for creating/updating the knowledgebase
+knowledgebase_password = "password"  # Replace this with a strong password
+
 # Create Knowledgebase section
 if selected_option == "Create Knowledgebase":
     st.header("Create Knowledgebase")
-    btn = st.button("Create Knowledgebase")
-    if btn:
-        with st.spinner("Creating knowledgebase..."):
-            create_vector_db()
-            st.success("Knowledgebase created successfully!")
-    st.write("Click the button above to create or update the knowledgebase.")
+
+    # Password input for authentication
+    password_input = st.text_input("Enter password to create/update knowledgebase:", type="password")
+    if password_input == knowledgebase_password:
+        btn = st.button("Create Knowledgebase")
+        if btn:
+            with st.spinner("Creating knowledgebase..."):
+                create_vector_db()
+                st.success("Knowledgebase created successfully!")
+        st.write("Click the button above to create or update the knowledgebase.")
+    else:
+        st.error("You do not have permission to create/update the knowledgebase.")
 
 # Ask a Question section
 elif selected_option == "Ask a Question":
