@@ -19,15 +19,7 @@ The **Campus-Queries-App** is built to serve a wide range of purposes, helping s
 1. **Campus Facilities:**
    - Search and retrieve detailed information about facilities such as libraries, laboratories, dining halls, and recreational centers.
    - View location details, descriptions, and operational hours.
-
-2. **Administrative Services:**
-   - Access important information related to campus administrative services, including office hours, contact details, and descriptions of available services.
-   - A helpful tool for students and staff who need to stay informed about procedures and services on campus.
-
-3. **Filtering and Sorting:**
-   - Users can apply dynamic filters to narrow down search results based on specific criteria like location, service type, or operating hours.
-   - This feature helps users quickly find relevant information without going through unnecessary data.
-
+   - 
 ## Purpose
 
 The app was developed specifically to address the needs of prospective students looking to take admission at **DIT University**. It aims to answer common queries regarding:
