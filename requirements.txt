@@ -4,3 +4,4 @@ streamlit
 tiktoken
 faiss-cpu
 protobuf
+langchain-community
