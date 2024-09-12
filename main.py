@@ -5,8 +5,6 @@ from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 import os
-import warnings
-warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env (especially openai api key)
