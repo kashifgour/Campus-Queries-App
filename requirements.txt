@@ -1,9 +1,8 @@
 google-generativeai
-langchain==0.0.284
-python-dotenv==1.0.1
-streamlit==1.30.0
+langchain==0.0.318
+streamlit==1.26.0
+faiss-cpu==1.7.5
+sentence-transformers==2.2.2
 tiktoken==0.4.0
-faiss-cpu==1.8.0
-protobuf==4.22.1
-sentence-transformers==3.2.0
-
+python-dotenv==1.0.0
+protobuf==3.20.3
