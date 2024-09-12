@@ -2,7 +2,7 @@ google-generativeai
 langchain==0.0.318
 streamlit==1.26.0
 faiss-cpu==1.7.4
-sentence-transformers==2.2.2
+sentence-transformers
 torch
 tiktoken==0.4.0
 python-dotenv==1.0.0
